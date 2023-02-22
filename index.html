@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Đăng Ký Học Phần</title>
+        <link rel="stylesheet" href="main.css">
+        <link rel="shortcut icon" href="https://portal6.hcmus.edu.vn/Styles/profi/images/logo186x150.png">
+    </head>
+    <body>
+        <header>
+            <h1>Bài tập 1 - 20120574</h1>
+        </header>
+        <nav class="top_nav">
+            <ul id="list_menu_top" class="list_menu">
+                <li><a href="javascript: void (0);">Menu 1</a></li>
+                <li><a href="javascript: void (0);">Menu 2</a></li>
+                <li><a href="javascript: void (0);">Menu 3</a></li>
+                <li><a href="javascript: void (0);">Menu 4</a></li>
+                <li><a href="javascript: void (0);">Menu 5</a></li>
+            </ul>
+        </nav>
+        <hr style="background-color: #2680eb; margin-top: 30px" />
+        <main class="main_container">
+            <div class="main_container__main_column">
+                <h2 class="title">ĐĂNG KÝ HỌC PHẦN</h2>
+                <hr />
+                <form class="main_column__form">
+                    <div class="main_column__form__label">
+                        <p>Mã số:</p>
+                        <p>Họ và tên:</p>
+                        <p>Địa chỉ:</p>
+                        <p>Điện thoại:</p>
+                        <p>Giới tính:</p>
+                        <p>Ngày sinh:</p>
+                        <p>Email:</p>
+                    </div>
+                    <div class="main_column__form__input">
+                        <input id="identify" type="text" />
+                        <input id="fullname" type="text" />
+                        <input id="address" type="text" />
+                        <input id="phone" type="text" />
+                        <div class="radiogroup">
+                            <input id="male" type="radio" name="gender" />
+                            <p>Nam</p>
+                            <input id="female" type="radio" name="gender" />
+                            <p>Nữ</p>
+                            <p id="error_msg" style="color: red"></p>
+                        </div>
+                        <div class="block_birthday">
+                            <input id="birthday" type="text" placeholder="mm/dd/yyyy" />
+                            <p>📅</p>
+                        </div>
+                        <input id="email" type="text" />
+                    </div>
+                </form>
+                <div class="main_column__text">
+                    <p class="text text_left">Các môn học</p>
+                    <p class="space"></p>
+                    <p class="text text_right">Các môn học đã chọn</p>
+                </div>
+                <div class="main_container__main_column__chooseSubjects">
+                    <div class="subjects_left">
+                        <div id="subject_left_list" class="subjects_list subjects_left_list">
+                            <p>Lập Trình Hướng Đối Tượng</p>
+                            <p>Cấu Trúc Dữ Liệu</p>
+                            <p>Lập Trình Windows</p>
+                            <p>NM Công Nghệ Phần Mềm</p>
+                            <p>Trí Tuệ Nhân Tạo</p>
+                            <p>Phát Triển Ứng Dựng Web</p>
+                            <p>Cơ Sở Dữ Liệu</p>
+                            <p>Nhập Môn Lập Trình</p>
+                        </div>
+                    </div>
+                    <div class="buttons_between">
+                        <button id="moveToRight">></button>
+                        <button id="moveAllToRight">>></button>
+                        <button id="moveToLeft">&lt</button>
+                        <button id="moveAllToLeft">&lt&lt</button>
+                    </div>
+                    <div class="subjects_right">
+                        <div id="subject_right_list" class="subjects_list subjects_right_list">
+                            <p>Kỹ Thuật Lập Trình</p>
+                            <p>Lập Trình Ứng Dụng Java</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="buttons_handle">
+                    <button id="btnRegister">Đăng ký</button>
+                    <button id="btnClearall">Xóa hết</button>
+                </div>
+                <hr />
+                <table id="students_table" class="students_info">
+                    <tr>
+                        <th>Mã số</th>
+                        <th>Họ và tên</th>
+                        <th>Giới tính</th>
+                        <th>Ngày sinh</th>
+                    </tr>
+                    <tr>
+                        <td>20120001</td>
+                        <td>Nguyễn Thị A</td>
+                        <td>Nữ</td>
+                        <td>07/08/2002</td>
+                    </tr>
+                    <tr>
+                        <td>20120123</td>
+                        <td>Trần Văn C</td>
+                        <td>Nam</td>
+                        <td>12/24/2002</td>
+                    </tr>
+                    <tr>
+                        <td>20120274</td>
+                        <td>Lê Văn G</td>
+                        <td>Nam</td>
+                        <td>06/13/2002</td>
+                    </tr>
+                    <tr>
+                        <td>20120634</td>
+                        <td>Ngô Thị E</td>
+                        <td>Nữ</td>
+                        <td>10/10/2002</td>
+                    </tr>
+                </table>
+            </div>
+            <div class="main_container__side">
+                <div class="news news01">
+                    <div class="main_container__side__news">
+                        <p class="direction">▶</p>
+                        <p>⇕</p>
+                        <h3>NEWS 01</h3>
+                    </div>
+                    <div class="content">Thông báo 1: nghỉ học ngày lễ</div>
+                </div>
+                <div class="news news02">
+                    <div class="main_container__side__news">
+                        <p class="direction">▶</p>
+                        <p>⇕</p>
+                        <h3>NEWS 02</h3>
+                    </div>
+                    <div class="content">Thông báo 2: học lập trình ứng dụng web</div>
+                </div>
+                <div class="news news03">
+                    <div class="main_container__side__news">
+                        <p class="direction">▶</p>
+                        <p>⇕</p>
+                        <h3>NEWS 03</h3>
+                    </div>
+                    <div class="content">
+                        Thông báo 3: học bù lập trình phát triển ứng dụng mobile
+                    </div>
+                </div>
+                <div class="news news04">
+                    <div class="main_container__side__news">
+                        <p class="direction">▶</p>
+                        <p>⇕</p>
+                        <h3>NEWS 04</h3>
+                    </div>
+                    <div class="content">
+                        Thông báo 4: diễn đàn thảo luận học bù lập trình phát triển ứng dụng mobile
+                    </div>
+                </div>
+            </div>
+        </main>
+        <hr />
+        <footer class="footer">
+            <p>Copyright ©️ &ltnickname></p>
+            <ul id="list_menu_bottom" class="list_menu_bottom">
+                <li><a href="javascript: void (0);">Menu 1</a></li>
+                <li><a href="javascript: void (0);">Menu 2</a></li>
+                <li><a href="javascript: void (0);">Menu 3</a></li>
+                <li><a href="javascript: void (0);">Menu 4</a></li>
+                <li><a href="javascript: void (0);">Menu 5</a></li>
+            </ul>
+        </footer>
+    </body>
+</html>
+<script src="https://code.jquery.com/jquery-3.6.1.js"></script>
+<script src="./jquery-ui.js"></script>
+<script src="./main.js"></script>

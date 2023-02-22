@@ -1,0 +1,335 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+}
+
+html,
+body {
+    padding: 3px;
+    font-size: 14px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+body {
+    position: relative;
+    max-width: 1200px;
+    margin: auto;
+}
+header {
+    width: 100%;
+    height: 6em;
+    background-color: #1dc2e6;
+    box-shadow: 2px 2px 10px 2px rgba(51, 45, 45, 0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 5px;
+}
+h1 {
+    font-size: 40px;
+    letter-spacing: 10px;
+    font-family: "Times New Roman", Times, serif;
+    color: #9ee5f5;
+    text-shadow: 2px 2px 5px rgba(51, 45, 45, 1);
+}
+.top_nav {
+    width: 500px;
+    padding: 0px 8px;
+    background-color: #b5d4fb;
+    box-shadow: 2px 2px 5px 2px rgba(51, 45, 45, 0.3);
+    border-radius: 2px;
+    position: absolute;
+    height: 25px;
+    left: 50%;
+    transform: translateX(-50%);
+    top: 5.4em;
+}
+.list_menu {
+    padding: 0px;
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+}
+.list_menu li a {
+    line-height: 25px;
+    font-size: 16px;
+    text-decoration: none;
+    color: #2680eb;
+    font-family: "Times New Roman", Times, serif;
+}
+
+li.active a{
+    color: red;
+}
+
+.list_menu li a:hover {
+    color: #ffe2b1;
+}
+
+/* Main CSS */
+.title {
+    font-size: 30px;
+    color: #ffa207;
+    text-align: center;
+    margin: 10px 0px;
+}
+.main_container {
+    display: flex;
+}
+.main_container__main_column {
+    width: 100%;
+    padding: 3px;
+    border-right: #2680eb dashed 1px;
+}
+.main_column__form {
+    display: flex;
+    justify-content: flex-end;
+    margin-top: 10px;
+}
+.main_column__form__input {
+    display: flex;
+    flex-direction: column;
+}
+.main_column__form__input input {
+    width: 350px;
+    height: 20px;
+    margin: 2px;
+    border: #6e7275 solid 1px;
+    border-radius: 1px;
+}
+.main_column__form__label p {
+    text-align: end;
+    font-family: "Times New Roman", Times, serif;
+    height: 23px;
+    line-height: 23px;
+    margin-right: 10px;
+}
+.radiogroup {
+    height: 20px;
+    display: flex;
+    justify-content: flex-start;
+}
+.radiogroup input {
+    width: 10px;
+    margin-top: 0px;
+}
+.radiogroup p {
+    line-height: 22px;
+    margin-right: 10px;
+}
+.space{
+    width: 45px;
+}
+.main_column__text{
+    display: flex;
+    justify-content: center;
+}
+.main_column__text{
+    margin-top: 4px;
+}
+.text {  
+    color: #ffa207;
+    font-weight: 700;
+}
+.text_left {
+    text-align: end;
+    width: 45%;
+}
+.text_right {
+    width: 45%;
+}
+
+.main_container__main_column__chooseSubjects {
+    display: flex;
+    align-items: stretch;
+    justify-content: center;
+    width: 100%;
+    margin-top: 3px;
+}
+.subjects_left {
+    width: 45%;
+}
+.subjects_right {
+    width: 45%;
+}
+.subjects_left_list {
+    position: relative;
+    padding: 2px 5px;
+    border: #98a0a4 solid 1px;
+}
+.subjects_right_list {
+    position: relative;
+    padding: 2px 5px;
+    border: #98a0a4 solid 1px;
+    /* height: 100%; */
+}
+.subjects_left_list p {
+    background-color: #efefef;
+    margin: 3px 0px;
+    border: #c5c2c2 solid 1px;
+    border-radius: 1px;
+}
+.subjects_list p:hover {
+    cursor: pointer;
+}
+.subjects_right_list p {
+    background-color: #fffa90;
+    margin: 3px 0px;
+    border: #c5c2c2 solid 1px;
+    border-radius: 1px;
+}
+.isClicked {
+    background: #F39814 !important;
+}
+.subjects_list{
+    height: 100%;
+}
+.buttons_between {
+    display: flex;
+    width: 35px;
+    flex-direction: column;
+    justify-content: center;
+    margin: 5px;
+}
+.buttons_between button {
+    margin: 2px;
+    background-color: #fdfdfd;
+    border: #ff8207 solid 1px;
+    color: #551a8b;
+    border-radius: 3px;
+}
+.buttons_handle {
+    margin: 5px;
+    text-align: center;
+}
+#btnRegister {
+    background-color: #fdfdfd;
+    border: #ff8207 solid 1px;
+    color: #551a8b;
+    border-radius: 3px;
+    margin-right: 10px;
+}
+#btnClearall {
+    background-color: #fdfdfd;
+    border: #ff8207 solid 1px;
+    color: #551a8b;
+    border-radius: 3px;
+}
+
+.main_container__side {
+    position: relative;
+    width: 360px;
+    padding: 4px 0px 4px 4px;
+}
+.main_container__side__news {
+    width: 100%;
+    height: 30px;
+    background-color: #ffe2b1;
+    border: #2680eb 1px solid;
+    display: flex;
+    font-size: 18px;
+    font-family: "Times New Roman", Times, serif;
+    color: #ffa207;
+    align-items: center;
+}
+.news {
+    position: relative;
+    margin: 2px;
+    /* transform-origin: 50% 50%; */
+}
+.content {
+    top: 30px;
+    left: 1px;
+    width: 100%;
+    padding: 10px 20px;
+    border: #98a0a4 solid 1px;
+    visibility: hidden;
+    position: absolute;
+    color: #2680eb;
+}
+.content:nth-child(1) {
+    color: red;
+}
+.main_container__side__news h3 {
+    font-weight: 100;
+    margin-left: 10px;
+}
+.main_container__side__news p {
+    margin-left: 10px;
+}
+.students_info {
+    width: 100%;
+    margin-top: 5px;
+}
+table,
+th,
+td {
+    border: 1px solid white;
+}
+.students_info th {
+    background-color: #ffa207;
+    color: #fbe2b1;
+}
+.students_info th:first-child {
+    width: 15%;
+}
+.students_info th:nth-child(2) {
+    width: 40%;
+}
+.students_info th:nth-child(3) {
+    width: 15%;
+}
+.students_info th:nth-child(4) {
+    width: 30%;
+}
+.students_info tr td:nth-child(1) {
+    text-align: center;
+}
+.students_info tr td:nth-child(3) {
+    text-align: center;
+}
+.students_info tr td:nth-child(4) {
+    text-align: center;
+}
+.students_info tr:nth-child(odd) {
+    background-color: #ffe2b1;
+}
+.footer {
+    display: flex;
+    justify-content: center;
+    margin-top: 3px;
+}
+.footer p {
+    color: #ffa207;
+}
+.list_menu_bottom {
+    display: flex;
+    list-style: none;
+}
+.list_menu_bottom a {
+    padding: 0px 10px;
+    color: #ffa207;
+}
+.list_menu_bottom a:hover {
+    background-color: #ff8207;
+}
+.list_menu_bottom li:nth-child(even) {
+    border-left: #ffa207 solid 1px;
+    border-right: #ffa207 solid 1px;
+}
+.block_birthday {
+    position: relative;
+}
+.block_birthday p {
+    position: absolute;
+    right: 3px;
+    top: 2px;
+}
+.block_birthday p:hover {
+    cursor: pointer;
+}
+.main_container__side__news:hover {
+    cursor: pointer;
+}
+button:active {
+    opacity: 0.7;
+}
