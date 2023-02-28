@@ -134,6 +134,23 @@ $(document).ready(function () {
         female.checked = false;
     });
 
+    var btnNews = document.getElementsByClassName("btnNews")[0];
+    var main_container__side = document.getElementsByClassName("main_container__side")[0];
+    btnNews.addEventListener("click", () => {
+        if(main_container__side.classList.contains('moveToLeft')) {
+            setTimeout(() => {
+                main_container__side.style.display = "none";
+            }, 500);
+            main_container__side.classList.add("moveToRight");
+            main_container__side.classList.remove("moveToLeft");
+        }
+        else {
+            main_container__side.style.display = "block";
+            main_container__side.classList.add("moveToLeft");
+            main_container__side.classList.remove("moveToRight");
+        }
+    })
+
 
     function handle_other_items(index) {
         for (var i = 0; i < list_menu_top.children.length; i++) {
